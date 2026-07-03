@@ -1,0 +1,38 @@
+:root{
+    --color-fondo: #060a12;
+    --color-cards: #0d1520;
+    --color-inputs: #111d2e;
+
+    --texto-main: #e2e8f0;
+    --texto-sec: #94a3b8;
+}
+
+body{
+    width: 100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    margin:0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+
+    padding: 30px;
+    box-sizing: border-box;
+
+    background: var(--color-fondo);
+}
+
+.card{
+    background: var(--color-cards);
+}
+.tipo3{
+    grid-column: span 2;
+    height: 110px;
+}
+.tipo2{
+    grid-column: span 3;
+}

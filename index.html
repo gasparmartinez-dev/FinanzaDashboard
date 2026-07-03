@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -15,7 +17,7 @@
     </header>
 
     <main>
-        <div class="card_balance">
+        <div class="card tipo3">
             <div class="cabecera_card_balance">
                 <h2>INGRESOS TOTALES</h2>
             </div>
@@ -24,7 +26,7 @@
             </div>
         </div>
 
-        <div class="card_balance">
+        <div class="card card_balance tipo3">
             <div class="cabecera_card_balance">
                 <h2>GASTOS TOTALES</h2>
             </div>
@@ -33,7 +35,7 @@
             </div>
         </div>
 
-        <div class="card_balance">
+        <div class="card card_balance tipo3">
             <div class="cabecera_card_balance">
                 <h2>BALANCE NETO</h2>
             </div>
@@ -43,21 +45,48 @@
         </div>
   
 
-        <div id="nueva_transaccion">
+        <div id="nueva_transaccion" class="card tipo2">
+            <h2>NUEVA TRANSACCIÓN</h2>
 
+            <form>
+                <label for="tipo">TIPO:</label>
+                <select name="tipo" id="tipo">
+                    <option value="ingreso" disabled selected>Ingreso</option>
+                    <option value="gasto">Gasto</option>
+                </select>
+
+                <label for="valor">IMPORTE (€):</label>
+                <input type="number" required placeholder="0.00" id="valor">
+
+                <label for="categoria">CATEGORÍA:</label>
+                <select name="categoria" id="categoria">
+                    <option value="facturas" disabled selected>Facturas</option>
+                    <option value="alquiler">Alquiler</option>
+                    <option value="alimentación">Alimentación</option>
+                    <option value="transporte">Transporte</option>
+                    <option value="seguros">Seguros</option>
+                    <option value="ocio">Ocio</option>
+                    <option value="ingreso">Inngreso</option>
+                </select>
+
+                <label for="descripcion">DESCRIPCIÓN:</label>
+                <input type="text" required placeholder="Descripción de la transacción" id="descripcion">
+
+                <button type="submit" id="add_transaccion">Añadir transacción</button>
+            </form>
         </div>
 
-        <div id="distribucion_gastos">
-
+        <div id="distribucion_gastos" class="card tipo2">
+            <h2>DISTRIBUCIÓN DE GASTOS</h2>
         </div>
 
 
-        <div id="historial_transacciones">
-
+        <div id="historial_transacciones" class="card tipo2">
+            <h2>HISTORIAL DE TRANSACCIONES</h2>
         </div>
 
-        <div id="grafico_saldo">
-
+        <div id="grafico_saldo" class="card tipo2">
+            <h2>EVOLUCIÓN DEL SALDO</h2>
         </div>
     </main>
     
