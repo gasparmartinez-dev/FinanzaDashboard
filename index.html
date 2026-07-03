@@ -53,28 +53,36 @@
             <h2>NUEVA TRANSACCIÓN</h2>
 
             <form>
+                <div class="form_item" id="form_item1">
                 <label for="tipo">TIPO:</label>
                 <select name="tipo" id="tipo">
                     <option value="ingreso" disabled selected>Ingreso</option>
                     <option value="gasto">Gasto</option>
                 </select>
+                </div>
 
-                <label for="valor">IMPORTE (€):</label>
-                <input type="number" required placeholder="0.00" id="valor">
+                <div class="form_item" id="form_item2">
+                    <label for="valor">IMPORTE (€):</label>
+                    <input type="number" required placeholder="0.00" id="valor">
+                </div>
 
-                <label for="categoria">CATEGORÍA:</label>
-                <select name="categoria" id="categoria">
-                    <option value="facturas" disabled selected>Facturas</option>
-                    <option value="alquiler">Alquiler</option>
-                    <option value="alimentación">Alimentación</option>
-                    <option value="transporte">Transporte</option>
-                    <option value="seguros">Seguros</option>
-                    <option value="ocio">Ocio</option>
-                    <option value="ingreso">Inngreso</option>
-                </select>
+                <div class="form_item" id="form_item3">
+                    <label for="categoria">CATEGORÍA:</label>
+                    <select name="categoria" id="categoria">
+                        <option value="facturas" disabled selected>Facturas</option>
+                        <option value="alquiler">Alquiler</option>
+                        <option value="alimentación">Alimentación</option>
+                        <option value="transporte">Transporte</option>
+                        <option value="seguros">Seguros</option>
+                        <option value="ocio">Ocio</option>
+                        <option value="ingreso">Inngreso</option>
+                    </select>
+                </div>
 
-                <label for="descripcion">DESCRIPCIÓN:</label>
-                <input type="text" required placeholder="Descripción de la transacción" id="descripcion">
+                <div class="form_item" id="form_item4">
+                    <label for="descripcion">DESCRIPCIÓN:</label>
+                    <input type="text" required placeholder="Descripción de la transacción" id="descripcion">
+                </div>
 
                 <button type="submit" id="add_transaccion">Añadir transacción</button>
             </form>
